@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Bookclub",
+    "description": "Bookclub",
+    "slug": "bookclub",
+    "privacy": "unlisted",
+    "sdkVersion": "31.0.0",
+    "scheme": "bookclub",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "0.0.10",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "foxbox",
+            "project": "bookclub-mobileapp",
+            "authToken": "a9d62dbd9ebb4eeb9da03f4c0e2fafc676c283df34bb4fe7ba6cafefa884299b"
+          }
+        }
+      ]
+    },
+    "notification": {
+      "icon": "./src/assets/images/status_bar.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "config": {
+        "branch": {
+          "apiKey": "key_test_pcHdH4ttPmwiRL9Z8I2mnaglEqgp8KSo"
+        }
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bookclubnow.bookclub",
+      "associatedDomains": [
+        "applinks:bookclub-app.foxboxapp.com",
+        "applinks:sp5k.app.link",
+        "applinks:sp5k-alternate.app.link",
+        "applinks:sp5k.test-app.link",
+        "applinks:sp5k-alternate.test-app.link"
+      ]
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "branch": {
+          "apiKey": "key_test_pcHdH4ttPmwiRL9Z8I2mnaglEqgp8KSo"
+        }
+      },
+      "versionCode": 6,
+      "package": "com.bookclubnow.bookclub",
+      "permissions": []
+    }
+  }
+}
