@@ -1,0 +1,44 @@
+---
+image: registry.gitlab.com/foxboxhq/devops/mobile-automation:latest
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+stages:
+  - test
+  - push
+  - build
+before_script:
+  - yarn install
+  - expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
+tests:
+  stage: test
+  script:
+    - yarn test --ci
+push-staging:
+  stage: push
+  script:
+    - expo publish --release-channel staging --non-interactive
+  only:
+    refs:
+      - master
+push-production:
+  stage: push
+  script:
+    - expo publish --release-channel staging --non-interactive
+  when: manual
+  only:
+    refs:
+      - master
+build-staging:
+  stage: build
+  script:
+    - expo build:ios --release-channel staging --non-interactive
+    - expo build:android --release-channel staging --non-interactive
+  when: manual
+build-production:
+  stage: build
+  script:
+    - expo build:ios --release-channel production --non-interactive
+    - expo build:android --release-channel production --non-interactive
+  when: manual
