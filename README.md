@@ -8,7 +8,7 @@ A project Description
 2. Install Expo CLI: `npm install expo --global`
 3. Download iOS or Android Expo app on your device.
 4. Login to Expo in the app and via command-line (`expo login`)
-5. Install dependencies: `yarn install`
+5. Install dependencies: `npm install`
 6. Run app: `npm start` and type `i` to open in iOS Simulator
 
 ## Publishing

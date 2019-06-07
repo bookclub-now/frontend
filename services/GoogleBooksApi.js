@@ -1,4 +1,4 @@
-import Config from '../../config';
+import Config from '../config';
 
 export const searchBooks = async ({ params }) => {
   const uri = `${Config.GOOGLE_BOOKS_API_URL}/books/v1/volumes?q=${serialize({

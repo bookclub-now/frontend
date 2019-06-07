@@ -8,13 +8,13 @@ import { composeWithDevTools } from 'remote-redux-devtools';
 import { Amplitude, DangerZone } from 'expo';
 import { Platform, StyleSheet, View, StatusBar } from 'react-native';
 import Config from './config';
-import loggingMiddleware from './src/middleware/loggingMiddleware';
-import { navigationRouteChange } from './src/actions/nav';
-import NavigationService from './src/services/NavigationService';
-import AppNavigator from './src/navigation/AppNavigator';
-import AppReducer from './src/reducers';
-import { parseUniversalLinks } from './src/actions/clubs';
-import { disableLoading } from './src/actions/account';
+import loggingMiddleware from './middleware/loggingMiddleware';
+import { navigationRouteChange } from './actions/nav';
+import NavigationService from './services/NavigationService';
+import AppNavigator from './navigation/AppNavigator';
+import AppReducer from './reducers';
+import { parseUniversalLinks } from './actions/clubs';
+import { disableLoading } from './actions/account';
 
 export default class BookClub extends React.Component {
   constructor() {

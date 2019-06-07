@@ -1,4 +1,4 @@
-import Config from '../../config';
+import Config from '../config';
 
 export const getClubs = async ({ auth }) => {
   const uri = `${Config.API_URL}/clubs`;

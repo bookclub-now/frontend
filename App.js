@@ -22,21 +22,21 @@ export default class App extends React.Component {
   _loadResourcesAsync = async () =>
     Promise.all([
       Asset.loadAsync([
-        require('./src/assets/images/robot-dev.png'),
-        require('./src/assets/images/robot-prod.png'),
+        require('./assets/images/robot-dev.png'),
+        require('./assets/images/robot-prod.png'),
       ]),
       Font.loadAsync({
         // This is the font that we are using for our tab bar
         ...Icon.Ionicons.font,
         // We include SpaceMono because we use it in HomeScreen.js. Feel free
         // to remove this if you are not using it in your app
-        'Raleway-Regular': require('./src/assets/fonts/Raleway-Regular.ttf'),
-        'Raleway-Light': require('./src/assets/fonts/Raleway-Light.ttf'),
-        'Raleway-Bold': require('./src/assets/fonts/Raleway-Bold.ttf'),
-        'Raleway-Thin': require('./src/assets/fonts/Raleway-Thin.ttf'),
-        'Muli-Regular': require('./src/assets/fonts/Muli-Regular.ttf'),
-        'Muli-Light': require('./src/assets/fonts/Muli-Light.ttf'),
-        'Muli-Bold': require('./src/assets/fonts/Muli-Bold.ttf'),
+        'Raleway-Regular': require('./assets/fonts/Raleway-Regular.ttf'),
+        'Raleway-Light': require('./assets/fonts/Raleway-Light.ttf'),
+        'Raleway-Bold': require('./assets/fonts/Raleway-Bold.ttf'),
+        'Raleway-Thin': require('./assets/fonts/Raleway-Thin.ttf'),
+        'Muli-Regular': require('./assets/fonts/Muli-Regular.ttf'),
+        'Muli-Light': require('./assets/fonts/Muli-Light.ttf'),
+        'Muli-Bold': require('./assets/fonts/Muli-Bold.ttf'),
       }),
     ]);
 

@@ -12,9 +12,9 @@
     ],
     "version": "0.0.10",
     "orientation": "portrait",
-    "icon": "./src/assets/images/icon.png",
+    "icon": "./assets/images/icon.png",
     "splash": {
-      "image": "./src/assets/images/splash.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
@@ -31,7 +31,7 @@
       ]
     },
     "notification": {
-      "icon": "./src/assets/images/status_bar.png"
+      "icon": "./assets/images/status_bar.png"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

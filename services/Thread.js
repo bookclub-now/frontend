@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { Socket } from './Phoenix';
-import Config from '../../config';
+import Config from '../config';
 import moment from 'moment';
 
 const TIMEOUT = 10000;
