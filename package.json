@@ -29,7 +29,7 @@
     "eslint-plugin-react-native": "^3.5.0",
     "expo": "^31.0.2",
     "idx": "^2.5.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.23",
     "prettier": "^1.15.3",
