@@ -30,7 +30,7 @@
     "expo": "^31.0.2",
     "idx": "^2.5.2",
     "lodash": "^4.17.11",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.23",
     "prettier": "^1.15.3",
     "prop-types": "^15.6.2",
